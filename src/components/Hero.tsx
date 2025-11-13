@@ -3,7 +3,7 @@ import heroImage from "@/assets/hero-cowork.jpg";
 
 const Hero = () => {
   const handleBookTour = () => {
-    window.open("https://wa.me/?text=Hi%20I%20want%20to%20book%20a%20tour%20of%20Ekatvam%20Cowork", "_blank");
+    window.open("https://wa.me/917447726161?text=Hi%20I%20want%20to%20book%20a%20tour%20of%20Ekatvam%20Cowork", "_blank");
   };
 
   return (
