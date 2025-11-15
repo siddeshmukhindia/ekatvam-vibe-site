@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 const Contact = () => {
   const handleDirections = () => {
-    window.open("https://www.google.com/maps/dir/?api=1&destination=", "_blank");
+    window.open("https://maps.app.goo.gl/oVEzMNXJjXzX3p1E8", "_blank");
   };
 
   return (
@@ -53,8 +53,9 @@ const Contact = () => {
                   <div>
                     <p className="font-medium text-foreground mb-2">Address</p>
                     <p className="text-muted-foreground mb-3">
-                      [Your Address Here]<br />
-                      City, State - Pincode
+                      Office No. 303, 3rd Floor, Sanskruti Mantra Building,<br />
+                      Tilak Rd, Vijayanagar Colony, Sadashiv Peth,<br />
+                      Pune, Maharashtra 411030
                     </p>
                     <Button
                       onClick={handleDirections}
