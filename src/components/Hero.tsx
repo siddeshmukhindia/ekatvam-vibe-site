@@ -50,11 +50,11 @@ const Hero = () => {
       </div>
       
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6">
+        <h1 className="text-5xl md:text-7xl font-black text-primary-foreground mb-6 font-heading tracking-tight">
           EKATVAM COWORK
         </h1>
         <div className="h-16 md:h-20 mb-8">
-          <p className="text-2xl md:text-4xl font-semibold text-accent">
+          <p className="text-2xl md:text-4xl font-bold text-white drop-shadow-lg">
             {typedText}
             <span className="animate-pulse">|</span>
           </p>
