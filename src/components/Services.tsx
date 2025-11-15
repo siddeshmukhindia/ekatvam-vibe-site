@@ -4,33 +4,33 @@ const Services = () => {
   const services = [
     {
       icon: Wifi,
-      title: "High-Speed WiFi",
-      description: "Lightning-fast internet for seamless work",
+      title: "High Speed Internet",
+      description: "Lightning-fast connectivity for seamless work",
     },
     {
       icon: Users,
-      title: "Meeting Room",
-      description: "Professional spaces for your team meetings",
+      title: "Ergonomic Seating",
+      description: "Comfortable chairs for all-day productivity",
     },
     {
       icon: Coffee,
-      title: "Pantry",
-      description: "Complimentary refreshments and beverages",
+      title: "Spacious Desks",
+      description: "Ample workspace for all your needs",
     },
     {
       icon: Zap,
-      title: "Power Backup",
-      description: "Uninterrupted power supply guaranteed",
+      title: "6 Seater Conference",
+      description: "Professional meeting room for your team",
     },
     {
       icon: Sparkles,
-      title: "Housekeeping",
-      description: "Maintained clean and hygienic workspace",
+      title: "Easy Metro Connectivity",
+      description: "Conveniently located near metro stations",
     },
     {
       icon: CalendarDays,
-      title: "Community Events",
-      description: "Regular networking and learning opportunities",
+      title: "Affordable Prices",
+      description: "Flexible plans that fit your budget",
     },
   ];
 
