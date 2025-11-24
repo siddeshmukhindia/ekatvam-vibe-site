@@ -1,9 +1,9 @@
 {
   "redirects": [
     {
-      "source": "/",
-      "destination": "https://ekatvamcowork.com",
-      "permanent": true
+      "source": "/(.*)",
+      "destination": "https://ekatvamcowork.com/$1",
+      "statusCode": 308
     }
   ],
   "routes": [
