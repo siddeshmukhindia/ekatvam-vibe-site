@@ -1,13 +1,13 @@
-import workspace1 from "@/assets/workspace-1.jpg";
-import workspace2 from "@/assets/workspace-2.jpg";
-import workspace3 from "@/assets/workspace-3.jpg";
-import workspace4 from "@/assets/workspace-4.jpg";
+import workspace1 from "@/assets/Workspace-1.webp";
+import workspace2 from "@/assets/Workspace-2.webp";
+import workspace3 from "@/assets/Workspace-3.webp";
+import workspace4 from "@/assets/Workspace-4.webp";
 
 const Gallery = () => {
   const images = [
-    { src: workspace1, alt: "Open workspace area" },
+    { src: workspace1, alt: "Executive Area" },
     { src: workspace2, alt: "Meeting room" },
-    { src: workspace3, alt: "Lounge area" },
+    { src: workspace3, alt: "Open area" },
     { src: workspace4, alt: "Private cabin" },
   ];
 
