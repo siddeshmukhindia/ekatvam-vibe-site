@@ -36,8 +36,8 @@ const Hero = () => {
     return () => clearTimeout(timer);
   }, [typedText, isDeleting, loopNum, typingSpeed]);
 
-  const handleBookTour = () => {
-    window.open("https://wa.me/917447726161?text=Hi%20I%20want%20to%20book%20a%20tour%20of%20Ekatvam%20Cowork", "_blank");
+  const handleGetOffers = () => {
+    window.open("https://wa.me/917875799111?text=Hello!%20Saw%20your%20website%20and%20want%20to%20enquire%20about%20pricing%20%26%20offers.", "_blank");
   };
 
   return (
@@ -61,10 +61,10 @@ const Hero = () => {
         </div>
         <Button 
           size="lg" 
-          onClick={handleBookTour}
+          onClick={handleGetOffers}
           className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6"
         >
-          Book a Tour
+          Get Offers
         </Button>
       </div>
     </section>
