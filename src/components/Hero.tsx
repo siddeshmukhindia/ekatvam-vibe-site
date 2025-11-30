@@ -37,15 +37,15 @@ const Hero = () => {
         </div>
       ))}
       
-  <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-  <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
+ <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
+  <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
     EKATVAM COWORK –
-    <span className="ml-2 text-[#A6312F] font-semibold tracking-wider text-lg md:text-xl align-middle">
+    <span className="ml-2 text-[#A6312F] font-semibold tracking-wide text-2xl md:text-3xl lg:text-4xl align-middle">
       Connect | Create | CoGrow
     </span>
   </h1>
 
-  <p className="text-lg md:text-xl text-white/90 mb-10 max-w-3xl mx-auto font-light tracking-wide">
+  <p className="text-2xl md:text-3xl text-white/95 mb-10 max-w-3xl mx-auto font-light">
     Designed for productivity and built for growth.
   </p>
 
@@ -57,6 +57,7 @@ const Hero = () => {
     Book a Tour →
   </Button>
 </div>
+
 
     </section>
   );
