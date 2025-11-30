@@ -40,6 +40,7 @@ export default {
           foreground: "hsl(var(--accent-foreground))",
         },
         highlight: "hsl(var(--highlight))",
+        "brand-red": "hsl(var(--brand-red))",
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
@@ -60,7 +61,7 @@ export default {
         },
       },
       fontFamily: {
-        heading: ['Montserrat', 'sans-serif'],
+        sans: ['Inter', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",

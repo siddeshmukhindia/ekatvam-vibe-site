@@ -1,5 +1,5 @@
 import logo from "@/assets/logo-square.png";
-import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -65,14 +65,23 @@ const Footer = () => {
             © {new Date().getFullYear()} Ekatvam Cowork Pune. All rights reserved.
           </p>
           <div className="flex gap-4">
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Facebook">
+            <a 
+              href="https://www.facebook.com/share/1Bd81vyqVu/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-accent transition-colors" 
+              aria-label="Facebook"
+            >
               <Facebook className="w-5 h-5" />
             </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Instagram">
+            <a 
+              href="https://www.instagram.com/ekatvamcowork?igsh=MWl5eW9xZzI5azU3ag==" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-accent transition-colors" 
+              aria-label="Instagram"
+            >
               <Instagram className="w-5 h-5" />
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="LinkedIn">
-              <Linkedin className="w-5 h-5" />
             </a>
           </div>
         </div>

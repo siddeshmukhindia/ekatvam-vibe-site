@@ -5,10 +5,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Phone, MessageCircle, MapPin } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
 
 const ContactSection = () => {
-  const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -24,20 +22,15 @@ const ContactSection = () => {
   };
 
   const handleWhatsApp = () => {
-    const message = `Hello! My name is ${formData.name}. ${formData.requirements ? `My requirements: ${formData.requirements}` : 'I want to know more about Ekatvam Cowork.'}`;
+    const namePart = formData.name ? `My name is ${formData.name}. ` : '';
+    const phonePart = formData.phone ? `Phone: ${formData.phone}. ` : '';
+    const requirementsPart = formData.requirements ? `Requirements: ${formData.requirements}` : 'I want to know more about Ekatvam Cowork.';
+    const message = `Hello! ${namePart}${phonePart}${requirementsPart}`;
     window.open(`https://wa.me/917875799111?text=${encodeURIComponent(message)}`, "_blank");
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.name || !formData.phone) {
-      toast({
-        title: "Error",
-        description: "Please fill in all required fields",
-        variant: "destructive"
-      });
-      return;
-    }
     handleWhatsApp();
   };
 
@@ -88,25 +81,23 @@ const ContactSection = () => {
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                  <Label htmlFor="name">Name *</Label>
+                  <Label htmlFor="name">Name</Label>
                   <Input
                     id="name"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     placeholder="Your name"
-                    required
                   />
                 </div>
 
                 <div>
-                  <Label htmlFor="phone">Phone *</Label>
+                  <Label htmlFor="phone">Phone</Label>
                   <Input
                     id="phone"
                     type="tel"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     placeholder="+91 XXXXX XXXXX"
-                    required
                   />
                 </div>
 
@@ -123,6 +114,13 @@ const ContactSection = () => {
 
                 <div className="grid grid-cols-2 gap-4 pt-2">
                   <Button
+                    type="submit"
+                    className="w-full bg-primary hover:bg-primary/80 text-primary-foreground"
+                  >
+                    <MessageCircle className="w-4 h-4 mr-2" />
+                    WhatsApp Now
+                  </Button>
+                  <Button
                     type="button"
                     onClick={handleCall}
                     variant="outline"
@@ -130,13 +128,6 @@ const ContactSection = () => {
                   >
                     <Phone className="w-4 h-4 mr-2" />
                     Call Now
-                  </Button>
-                  <Button
-                    type="submit"
-                    className="w-full bg-green-500 hover:bg-green-600"
-                  >
-                    <MessageCircle className="w-4 h-4 mr-2" />
-                    WhatsApp
                   </Button>
                 </div>
               </form>
