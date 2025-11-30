@@ -42,7 +42,7 @@ const Hero = () => {
           style={{ backgroundImage: `url(${image})` }}
         >
           {/* DARK OVERLAY */}
-          <div className="absolute inset-0 bg-black/30" />
+          <div className="absolute inset-0 bg-black/60" />
         </div>
       ))}
 
@@ -55,7 +55,7 @@ const Hero = () => {
         </h1>
 
         {/* TAGLINE ON NEW LINE */}
-        <span className="block mt-2 text-[#A6312F] font-semibold tracking-wide text-3xl md:text-4xl">
+        <span className="block mt-2 text-[#D9B42C] font-semibold tracking-wide text-3xl md:text-4xl">
           Connect | Create | CoGrow
         </span>
 
