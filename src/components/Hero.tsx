@@ -55,14 +55,15 @@ const Hero = () => {
         </h1>
 
         {/* TAGLINE ON NEW LINE */}
-        <span className="block mt-2 text-[#D9B42C] font-semibold tracking-wide text-3xl md:text-4xl">
+        <span className="block mt-2 text-[#D9B42C] font-semibold tracking-wide text-2xl md:text-3xl">
           Connect | Create | CoGrow
         </span>
 
         {/* SUBTITLE */}
-        <p className="text-2xl md:text-3xl text-white/95 mt-6 mb-10 max-w-3xl mx-auto font-light">
-          Designed for productivity and built for growth.
-        </p>
+      <p className="text-base md:text-lg text-white/95 mt-6 mb-10 max-w-3xl mx-auto font-light">
+      Designed for productivity and built for growth.
+      </p>
+
 
         {/* CTA BUTTON */}
         <Button
