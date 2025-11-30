@@ -7,8 +7,8 @@ import logo from "@/assets/logo.png";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleGetOffers = () => {
-    window.open("https://wa.me/917875799111?text=Hello!%20Saw%20your%20website%20and%20want%20to%20enquire%20about%20pricing%20%26%20offers.", "_blank");
+  const handleBookTour = () => {
+    window.open("https://wa.me/917875799111?text=Hello!%20I%20want%20to%20book%20a%20tour%20of%20Ekatvam%20Cowork.", "_blank");
   };
 
   return (
@@ -21,22 +21,20 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <NavLink
-              to="/"
-              className="text-sm font-medium text-foreground hover:text-accent transition-colors"
-              activeClassName="text-accent"
+            <a
+              href="#workspaces"
+              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
-              Home
-            </NavLink>
-            <NavLink
-              to="/contact"
-              className="text-sm font-medium text-foreground hover:text-accent transition-colors"
-              activeClassName="text-accent"
+              Workspaces
+            </a>
+            <a
+              href="#contact"
+              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
-              Contact Us
-            </NavLink>
-            <Button onClick={handleGetOffers} className="bg-accent hover:bg-accent/90">
-              Get Offers
+              Contact
+            </a>
+            <Button onClick={handleBookTour} className="bg-primary hover:bg-primary/90">
+              Book a Tour
             </Button>
           </nav>
 
@@ -57,24 +55,22 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="md:hidden py-4 space-y-4">
-            <NavLink
-              to="/"
-              className="block text-sm font-medium text-foreground hover:text-accent transition-colors"
-              activeClassName="text-accent"
+            <a
+              href="#workspaces"
+              className="block text-sm font-medium text-foreground hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Home
-            </NavLink>
-            <NavLink
-              to="/contact"
-              className="block text-sm font-medium text-foreground hover:text-accent transition-colors"
-              activeClassName="text-accent"
+              Workspaces
+            </a>
+            <a
+              href="#contact"
+              className="block text-sm font-medium text-foreground hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Contact Us
-            </NavLink>
-            <Button onClick={handleGetOffers} className="w-full bg-accent hover:bg-accent/90">
-              Get Offers
+              Contact
+            </a>
+            <Button onClick={handleBookTour} className="w-full bg-primary hover:bg-primary/90">
+              Book a Tour
             </Button>
           </nav>
         )}
