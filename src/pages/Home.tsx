@@ -1,17 +1,19 @@
 import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Gallery from "@/components/Gallery";
-import Services from "@/components/Services";
-import Pricing from "@/components/Pricing";
+import WorkspaceCards from "@/components/WorkspaceCards";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import Testimonials from "@/components/Testimonials";
+import ContactSection from "@/components/ContactSection";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 const Home = () => {
   return (
     <div className="min-h-screen">
       <Hero />
-      <About />
-      <Gallery />
-      <Services />
-      <Pricing />
+      <WorkspaceCards />
+      <WhyChooseUs />
+      <Testimonials />
+      <ContactSection />
+      <FloatingWhatsApp />
     </div>
   );
 };
