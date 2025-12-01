@@ -42,7 +42,7 @@ const Hero = () => {
           style={{ backgroundImage: `url(${image})` }}
         >
           {/* DARK OVERLAY */}
-          <div className="absolute inset-0 bg-black/75" />
+          <div className="absolute inset-0 bg-black/65" />
         </div>
       ))}
 
