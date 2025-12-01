@@ -4,7 +4,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Phone, MessageCircle, MapPin } from "lucide-react";
+import { Phone, MapPin } from "lucide-react";
+import whatsappIcon from "@/assets/whatsapp.png";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -117,7 +118,7 @@ const ContactSection = () => {
                     type="submit"
                     className="w-full bg-primary hover:bg-primary/80 text-primary-foreground"
                   >
-                    <MessageCircle className="w-4 h-4 mr-2" />
+                    <img src={whatsappIcon} alt="" className="w-5 h-5 mr-2" />
                     WhatsApp Now
                   </Button>
                   <Button

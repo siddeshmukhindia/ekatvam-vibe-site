@@ -1,4 +1,4 @@
-import { MessageCircle } from "lucide-react";
+import whatsappIcon from "@/assets/whatsapp.png";
 
 const FloatingWhatsApp = () => {
   const handleWhatsApp = () => {
@@ -8,11 +8,14 @@ const FloatingWhatsApp = () => {
   return (
     <button
       onClick={handleWhatsApp}
-      className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full shadow-lg hover:shadow-xl transition-all flex items-center justify-center group"
-      style={{ backgroundColor: "#25D366" }}
+      className="fixed bottom-6 right-6 z-50 rounded-full shadow-xl hover:shadow-2xl transition-all group"
       aria-label="Chat on WhatsApp"
     >
-      <MessageCircle className="w-7 h-7 text-white" />
+      <img 
+        src={whatsappIcon} 
+        alt="WhatsApp"
+        className="w-14 h-14 rounded-full"
+      />
     </button>
   );
 };
