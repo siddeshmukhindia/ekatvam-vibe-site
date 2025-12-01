@@ -31,7 +31,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative top-0 inset-0 h-screen overflow-hidden flex items-center justify-center p-0 m-0">
       
       {/* MOBILE VIDEO - Shows only on mobile */}
       <div className="block md:hidden absolute inset-0 w-full h-full">
@@ -71,7 +71,7 @@ const Hero = () => {
         </h1>
 
         {/* TAGLINE ON NEW LINE */}
-        <span className="block mt-2 mx-auto text-[#D9B42C] font-semibold tracking-wide text-xl md:text-3xl typing">
+        <span className="typing-animation text-[#D9B42C] font-semibold tracking-wide text-xl md:text-3xl block mt-2 mx-auto">
           Connect | Create | CoGrow
         </span>
 
