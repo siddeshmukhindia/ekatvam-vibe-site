@@ -6,6 +6,7 @@ import img3 from "@/assets/3.webp";
 import img5 from "@/assets/5.webp";
 import img7 from "@/assets/7.webp";
 import img9 from "@/assets/9.webp";
+import walkthroughVideo from "@/assets/walkthrough.mp4";
 
 const heroImages = [img1, img3, img5, img7, img9];
 
@@ -32,11 +33,26 @@ const Hero = () => {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       
-      {/* BACKGROUND IMAGES WITH FADE TRANSITION */}
+      {/* MOBILE VIDEO - Shows only on mobile */}
+      <div className="block md:hidden absolute inset-0 w-full h-full">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src={walkthroughVideo} type="video/mp4" />
+        </video>
+        {/* DARK OVERLAY */}
+        <div className="absolute inset-0 bg-black/65" />
+      </div>
+
+      {/* DESKTOP IMAGES WITH FADE TRANSITION - Shows only on desktop */}
       {heroImages.map((image, index) => (
         <div
           key={index}
-          className={`absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-1000 ${
+          className={`hidden md:block absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-1000 ${
             index === currentImageIndex ? "opacity-100" : "opacity-0"
           }`}
           style={{ backgroundImage: `url(${image})` }}
@@ -69,7 +85,7 @@ const Hero = () => {
         <Button
           size="lg"
           onClick={handleBookTour}
-          className="bg-[#D9B42C] hover:bg-[#B89624] text-[#1E3A33] font-bold text-lg px-10 py-6 h-auto shadow-lg hover:shadow-xl transition-all rounded-xl"
+          className="bg-[#D9B42C] hover:bg-[#B89624] text-[#1E3A33] font-bold text-base md:text-lg px-6 py-3 md:px-10 md:py-6 h-auto shadow-lg hover:shadow-xl transition-all rounded-xl"
         >
           Book a Tour →
         </Button>
