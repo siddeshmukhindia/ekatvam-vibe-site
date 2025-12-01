@@ -69,7 +69,7 @@ const Hero = () => {
         <Button
           size="lg"
           onClick={handleBookTour}
-          className="bg-[#1E3A33] hover:bg-[#27493F] text-white text-lg px-10 py-6 h-auto shadow-lg hover:shadow-xl transition-all rounded-xl"
+          className="bg-[#8A8F39] hover:bg-[#27493F] text-white text-lg px-10 py-6 h-auto shadow-lg hover:shadow-xl transition-all rounded-xl"
         >
           Book a Tour →
         </Button>
