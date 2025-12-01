@@ -55,7 +55,7 @@ const Hero = () => {
         </h1>
 
         {/* TAGLINE ON NEW LINE */}
-        <span className="block mt-2 text-[#D9B42C] font-semibold tracking-wide text-3xl md:text-4xl typing">
+        <span className="block mt-2 mx-auto text-[#D9B42C] font-semibold tracking-wide text-3xl md:text-4xl typing">
           Connect | Create | CoGrow
         </span>
 
