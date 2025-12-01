@@ -55,7 +55,7 @@ const Hero = () => {
         </h1>
 
         {/* TAGLINE ON NEW LINE */}
-        <span className="block mt-2 mx-auto text-[#D9B42C] font-semibold tracking-wide text-3xl md:text-3xl typing">
+        <span className="block mt-2 mx-auto text-[#D9B42C] font-semibold tracking-wide text-xl md:text-3xl typing">
           Connect | Create | CoGrow
         </span>
 
@@ -69,7 +69,7 @@ const Hero = () => {
         <Button
           size="lg"
           onClick={handleBookTour}
-          className="bg-[#848A36] hover:bg-[#848A36] text-white text-lg px-10 py-6 h-auto shadow-lg hover:shadow-xl transition-all rounded-xl"
+          className="bg-[#D9B42C] hover:bg-[#B89624] text-[#1E3A33] font-bold text-lg px-10 py-6 h-auto shadow-lg hover:shadow-xl transition-all rounded-xl"
         >
           Book a Tour →
         </Button>
