@@ -34,7 +34,7 @@ const Header = () => {
               Contact
             </a>
             <Button onClick={handleBookTour} className="bg-primary hover:bg-primary/90">
-              Book a Tour
+              Get Offer
             </Button>
           </nav>
 
@@ -70,7 +70,7 @@ const Header = () => {
               Contact
             </a>
             <Button onClick={handleBookTour} className="w-full bg-primary hover:bg-primary/90">
-              Book a Tour
+              Get Offer
             </Button>
           </nav>
         )}

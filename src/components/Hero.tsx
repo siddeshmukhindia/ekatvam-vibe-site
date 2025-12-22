@@ -87,7 +87,7 @@ const Hero = () => {
           onClick={handleBookTour}
           className="bg-[#D9B42C] hover:bg-[#B89624] text-[#1E3A33] font-bold text-base md:text-lg px-6 py-3 md:px-10 md:py-6 h-auto shadow-lg hover:shadow-xl transition-all rounded-xl"
         >
-          Book a Tour →
+          Get Offer →
         </Button>
 
       </div>
