@@ -79,44 +79,14 @@ const ContactSection = () => {
             <CardHeader>
               <CardTitle>Contact Us</CardTitle>
             </CardHeader>
-            <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
-                  <Label htmlFor="name">Name</Label>
-                  <Input
-                    id="name"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    placeholder="Your name"
-                  />
-                </div>
-
-                <div>
-                  <Label htmlFor="phone">Phone</Label>
-                  <Input
-                    id="phone"
-                    type="tel"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    placeholder="+91 XXXXX XXXXX"
-                  />
-                </div>
-
-                <div>
-                  <Label htmlFor="requirements">Requirements</Label>
-                  <Textarea
-                    id="requirements"
-                    value={formData.requirements}
-                    onChange={(e) => setFormData({ ...formData, requirements: e.target.value })}
-                    placeholder="Tell us about your workspace needs..."
-                    rows={4}
-                  />
-                </div>
-
-                <div className="grid grid-cols-2 gap-4 pt-2">
+            <CardContent className="space-y-6">
+              {/* Instant Contact Buttons - Above Form */}
+              <div className="space-y-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <Button
-                    type="submit"
-                    className="w-full bg-primary hover:bg-primary/80 text-primary-foreground"
+                    type="button"
+                    onClick={handleWhatsApp}
+                    className="w-full bg-[#25D366] hover:bg-[#20BD5A] text-white font-semibold py-6 text-base"
                   >
                     <img src={whatsappIcon} alt="" className="w-5 h-5 mr-2" />
                     WhatsApp Now
@@ -124,14 +94,71 @@ const ContactSection = () => {
                   <Button
                     type="button"
                     onClick={handleCall}
-                    variant="outline"
-                    className="w-full"
+                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-6 text-base"
                   >
-                    <Phone className="w-4 h-4 mr-2" />
+                    <Phone className="w-5 h-5 mr-2" />
                     Call Now
                   </Button>
                 </div>
-              </form>
+                <p className="text-sm text-muted-foreground text-center">
+                  Get instant response from our workspace team
+                </p>
+              </div>
+
+              {/* Divider */}
+              <div className="flex items-center gap-4">
+                <div className="flex-1 h-px bg-border" />
+                <span className="text-sm text-muted-foreground font-medium">OR</span>
+                <div className="flex-1 h-px bg-border" />
+              </div>
+
+              {/* Form Section */}
+              <div className="space-y-4">
+                <p className="text-sm text-muted-foreground text-center">
+                  Prefer a callback or custom workspace offer?
+                </p>
+                
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <div>
+                    <Label htmlFor="name">Name</Label>
+                    <Input
+                      id="name"
+                      value={formData.name}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      placeholder="Your name"
+                    />
+                  </div>
+
+                  <div>
+                    <Label htmlFor="phone">Phone</Label>
+                    <Input
+                      id="phone"
+                      type="tel"
+                      value={formData.phone}
+                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                      placeholder="+91 XXXXX XXXXX"
+                    />
+                  </div>
+
+                  <div>
+                    <Label htmlFor="requirements">Requirements</Label>
+                    <Textarea
+                      id="requirements"
+                      value={formData.requirements}
+                      onChange={(e) => setFormData({ ...formData, requirements: e.target.value })}
+                      placeholder="Tell us about your workspace needs..."
+                      rows={3}
+                    />
+                  </div>
+
+                  <Button
+                    type="submit"
+                    className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold py-6 text-base"
+                  >
+                    Get Workspace Offer
+                  </Button>
+                </form>
+              </div>
             </CardContent>
           </Card>
         </div>
