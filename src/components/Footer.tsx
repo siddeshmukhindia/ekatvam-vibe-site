@@ -6,12 +6,9 @@ const Footer = () => {
     <footer className="border-t border-border bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-          {/* Logo and Tagline */}
+          {/* Logo */}
           <div className="flex flex-col items-center md:items-start">
-            <img src={logo} alt="Ekatvam Cowork" className="h-20 w-auto mb-4" />
-            <p className="text-sm text-muted-foreground text-center md:text-left">
-              Connect | Create | CoGrow
-            </p>
+            <img src={logo} alt="Ekatvam Cowork" className="h-28 w-auto" />
           </div>
 
           {/* Contact Info */}
